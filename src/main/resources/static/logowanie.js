@@ -17,15 +17,13 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
         })
         .then(data => {
             if (data.trim() === 'Siema admin!') {
-                // Pokaż zawartość po zalogowaniu
+
                 document.getElementById('secretContent').style.display = 'block';
                 document.getElementById('welcomeImage').style.display = 'block';
 
-                // Pokaż zakładkę admina i sekcję
                 document.getElementById('adminTab').style.display = 'inline-block';
                 document.getElementById('adminSection').style.display = 'block';
 
-                // Zmień tło strony na żółte
                 document.body.style.backgroundColor = '#fffacd';
 
 

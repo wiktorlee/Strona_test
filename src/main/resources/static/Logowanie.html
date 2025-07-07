@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <title>Logowanie – Strona WROLOTOWA</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Strona WROLOTOWA!!</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Witamy</a></li>
+            <li><a href="O_nas.html">O nas</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+            <li><a href="Logowanie.html">Logowanie</a></li>
+            <li id="adminTab" style="display: none;"><a href="#adminSection">Panel admina</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Panel logowania</h2>
+
+    <form id="loginForm">
+        <label for="username">Login:</label>
+        <input type="text" id="username" required />
+        <label for="password">Hasło:</label>
+        <input type="password" id="password" required />
+        <br><br>
+        <button type="submit">Zaloguj</button>
+    </form>
+
+    <div id="secretContent" style="display:none; margin-top: 30px;">
+        <h3>Witaj, użytkowniku!</h3>
+        <p>To jest ukryta zawartość widoczna po poprawnym zalogowaniu.</p>
+        <img
+                id="welcomeImage"
+                src="sackboy.jpg"
+                alt="Powitanie"
+                style="display: none; max-width: 300px; margin: 20px auto; display: block;" />
+
+    </div>
+
+    <!-- Sekcja admina -->
+    <section id="adminSection" style="display: none; padding: 30px; background-color: #fff8c6; margin-top: 30px; border: 2px solid #ffc107;">
+        <h2 style="color: #cc9900;">Panel administratora</h2>
+        <p>Witaj w panelu admina. Możesz tutaj zarządzać treściami.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Strona WROLOTOWA</p>
+</footer>
+
+<script src="logowanie.js"></script>
+</body>
+</html>
